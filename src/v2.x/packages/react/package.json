@@ -16,10 +16,10 @@
     "access": "public"
   },
   "scripts": {
-    "dev:css": "npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles.css --watch --minify",
-    "build:css": "npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles.css -m",
-    "dev": "concurrently \"npm:dev:css\" \"tsup --watch\"",
-    "build": "tsup && npm run build:css",
+    "dev:css": "node init && npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles.css --watch --minify",
+    "build:css": "node init && npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles.css -m",
+    "dev": "node init && concurrently \"npm:dev:css\" \"tsup --watch\"",
+    "build": "node init && tsup && npm run build:css",
     "prepublishOnly": "pnpm run build",
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",

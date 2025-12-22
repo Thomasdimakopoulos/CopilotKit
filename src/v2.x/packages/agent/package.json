@@ -15,9 +15,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "prepublishOnly": "pnpm run build",
-    "dev": "tsup --watch",
+    "dev": "node init && tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",
     "clean": "rm -rf dist",

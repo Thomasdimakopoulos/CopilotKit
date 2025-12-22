@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "NODE_ENV=development npm run build && npm run server",
-    "build": "INPUT=ui-raw.html vite build",
+    "start": "node init && NODE_ENV=development npm run build && npm run server",
+    "build": "node init && INPUT=ui-raw.html vite build",
     "server": "npx tsx server.ts"
   },
   "dependencies": {

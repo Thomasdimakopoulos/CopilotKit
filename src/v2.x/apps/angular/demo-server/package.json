@@ -4,8 +4,8 @@
   "type": "module",
   "version": "0.0.0",
   "scripts": {
-    "dev": "nodemon --verbose --cwd ../../../ --watch packages/core/dist/** --watch packages/shared/dist/** --watch packages/runtime/dist/** --watch packages/demo-agents/dist/** --watch apps/angular/demo-server/src/** --ext mjs,js,json,ts --delay 800ms --signal SIGTERM --exec \"tsx --env-file=apps/angular/demo-server/.env apps/angular/demo-server/src/index.ts\"",
-    "start": "node --env-file=.env --loader tsx src/index.ts"
+    "dev": "node init && nodemon --verbose --cwd ../../../ --watch packages/core/dist/** --watch packages/shared/dist/** --watch packages/runtime/dist/** --watch packages/demo-agents/dist/** --watch apps/angular/demo-server/src/** --ext mjs,js,json,ts --delay 800ms --signal SIGTERM --exec \"tsx --env-file=apps/angular/demo-server/.env apps/angular/demo-server/src/index.ts\"",
+    "start": "node init && node --env-file=.env --loader tsx src/index.ts"
   },
   "dependencies": {
     "@ag-ui/client": "0.0.42",

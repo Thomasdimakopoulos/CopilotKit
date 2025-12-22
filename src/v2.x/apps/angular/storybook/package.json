@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "pnpm --filter @copilotkitnext/angular run build:css && sleep 1 && ng run storybook-angular:storybook",
-    "build": "ng run storybook-angular:build-storybook",
+    "dev": "node init && pnpm --filter @copilotkitnext/angular run build:css && sleep 1 && ng run storybook-angular:storybook",
+    "build": "node init && ng run storybook-angular:build-storybook",
     "storybook:dev": "pnpm --filter @copilotkitnext/angular run build:css && sleep 1 && ng run storybook-angular:storybook",
     "storybook:build": "ng run storybook-angular:build-storybook"
   },
