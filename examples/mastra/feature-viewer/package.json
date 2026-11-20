@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "mastra": "mastra",
-    "dev": "node init && node scripts/generate-content-json.js && next dev",
-    "build": "node init && node scripts/generate-content-json.js && next build",
-    "start": "node init && next start",
+    "dev": "node scripts/generate-content-json.js && next dev",
+    "build": "node scripts/generate-content-json.js && next build",
+    "start": "next start",
     "lint": "next lint",
     "generate-content-json": "node scripts/generate-content-json.js"
   },

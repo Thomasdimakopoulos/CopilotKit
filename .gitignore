@@ -27,4 +27,3 @@ __pycache__/
 .vercel
 
 docs/next-env.d.ts
-config.bat

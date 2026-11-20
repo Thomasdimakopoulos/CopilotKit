@@ -23,8 +23,8 @@
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "node init && pnpm run graphql-codegen && tsup --clean",
-    "dev": "node init && concurrently \"pnpm run graphql-codegen:watch\" \"tsup --watch --no-splitting\"",
+    "build": "pnpm run graphql-codegen && tsup --clean",
+    "dev": "concurrently \"pnpm run graphql-codegen:watch\" \"tsup --watch --no-splitting\"",
     "test": "vitest run",
     "test:watch": "vitest",
     "check-types": "tsc --noEmit",
